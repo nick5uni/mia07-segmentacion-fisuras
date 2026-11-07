@@ -1,6 +1,6 @@
 # Segmentación de fisuras mediante arquitecturas Encoder Decoder
 
-Proyecto final del curso MIA-203 de la Maestría en Inteligencia Artificial, FIIS, Universidad Nacional de Ingeniería. El equipo compara un Encoder-Decoder sin conexiones de salto (A0) con una Mini U-Net con dos conexiones de salto (A1) y una línea base de umbralización adaptativa.
+Proyecto final del curso MIA-07 de la Maestría en Inteligencia Artificial, FIIS, Universidad Nacional de Ingeniería. El equipo compara un Encoder-Decoder sin conexiones de salto (A0) con una Mini U-Net con dos conexiones de salto (A1) y una línea base de umbralización adaptativa.
 
 | Método | Dice global en 111 imágenes de prueba |
 |---|---:|
@@ -77,3 +77,7 @@ python src/figura_y_benchmark_etapa4.py
 `results/independiente/` conserva los conteos y estadísticas que respaldan el v9. La regeneración queda en `results/recalculado_independiente/`. Para el intervalo de confianza, el artículo calcula la diferencia media de Dice entre semillas y aplica un bootstrap pareado de semillas e imágenes con 3.000 remuestreos. NB04b también calcula un intervalo a partir de los conteos agrupados y remuestrea imágenes. Por eso los intervalos corresponden a métodos distintos. Para regenerar las tablas desde los registros históricos, ejecutar `python src/tablas_articulo.py`.
 
 El equipo realizó un trabajo secuencial con entregas en Drive. GitHub se incorporó al cierre para reunir el código, los pesos y las instrucciones de reproducción. La autoría por etapa se documenta en [Contribuciones](CONTRIBUCIONES.md).
+
+## Estado de NB04a y NB04b
+
+`results/independiente/VALIDACION_RESULTADOS.json` conserva la nota de la revisión independiente inicial, cuando aún no se habían recibido NB04a y NB04b. Los dos notebooks se incorporaron después y están disponibles en [`notebooks/NB04a_Semillas.ipynb`](notebooks/NB04a_Semillas.ipynb) y [`notebooks/NB04b_Benchmark.ipynb`](notebooks/NB04b_Benchmark.ipynb). El JSON documenta el alcance de aquella revisión. Sus conteos y métricas corresponden a la evaluación independiente de los seis checkpoints.
