@@ -10,15 +10,15 @@ Proyecto final del curso MIA-07 de la Maestría en Inteligencia Artificial, FIIS
 
 Los valores de las redes son media y desviación estándar muestral de tres semillas. El intervalo exploratorio del v9 incluye cero. La comparación mide coincidencia con la máscara de referencia de Crack-Seg. Las salidas sirven para apoyar la revisión visual de fisuras.
 
-[Abrir la demo en Colab](https://colab.research.google.com/github/nick5uni/mia203-segmentacion-fisuras/blob/main/notebooks/NB05_Demo_Colab.ipynb) · [Pesos y huellas SHA256](weights/) · [Contribuciones y uso de IA](CONTRIBUCIONES.md)
+[Abrir la demo en Colab](https://colab.research.google.com/github/nick5uni/mia07-segmentacion-fisuras/blob/main/notebooks/NB05_Demo_Colab.ipynb) · [Pesos y huellas SHA256](weights/) · [Contribuciones y uso de IA](CONTRIBUCIONES.md)
 
 ## Instalación y datos
 
 Ejecutar desde la raíz del repositorio con Python 3.12. Para reproducir la evaluación independiente en CPU, instalar PyTorch 2.15.0 desde su índice de ruedas CPU. Para entrenar o medir en GPU, usar una instalación de PyTorch con CUDA. El benchmark histórico de Colab registra Python 3.13.16 y PyTorch 2.11.0+cu130 sobre Tesla T4.
 
 ```bash
-git clone https://github.com/nick5uni/mia203-segmentacion-fisuras.git
-cd mia203-segmentacion-fisuras
+git clone https://github.com/nick5uni/mia07-segmentacion-fisuras.git
+cd mia07-segmentacion-fisuras
 python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
 python src/preparar_datos.py
