@@ -1,0 +1,35 @@
+{
+    "fecha_exportacion": "2026-10-26T23:34:36.365860",
+    "notebook": "NB02_EncoderDecoder",
+    "arquitectura": "EncoderDecoder_sin_skip",
+    "parametros_entrenables": 106753,
+    "dataset": "Crack-Seg completo v1",
+    "imagenes_train": 3717,
+    "imagenes_val": 199,
+    "imagenes_test_reservadas": 111,
+    "resolucion": [
+        416,
+        416
+    ],
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "loss": "BCE + Dice",
+    "optimizer": "Adam",
+    "early_stopping_patience": 7,
+    "min_delta": 0.001,
+    "epochs_ejecutadas": 20,
+    "epoch_checkpoint_best": 13,
+    "checkpoint_best": {
+        "train_loss": 0.3599227498961226,
+        "val_loss": 0.3382471473372761,
+        "val_dice": 0.7290147128408245,
+        "val_iou": 0.5735823382112246
+    },
+    "epoch_minima_val_loss_observada": 16,
+    "tiempo_total_epochs_seg": 3133.0482483779997,
+    "metricas": "Validación; no son resultados de TEST",
+    "checkpoints": [
+        "checkpoint_best.pt",
+        "checkpoint_last.pt"
+    ]
+}

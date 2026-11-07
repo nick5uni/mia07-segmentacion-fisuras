@@ -1,0 +1,7 @@
+{
+  "pairs_checked": 4027,
+  "train": 3717,
+  "val": 199,
+  "test": 111,
+  "source_sha256": "814b566d61e890024d15f22a3e6b14e252f781ab83f60a8d59e6684817efecdc"
+}

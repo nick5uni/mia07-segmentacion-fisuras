@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.15.0+cpu",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+  "torch_threads": 4,
+  "device": "CPU",
+  "test_images": 111,
+  "threshold": 0.5,
+  "batch": 4,
+  "timing": "forward only, 3 warmup batches and 10 repetitions of first batch, median per image; no preprocessing, no GPU",
+  "test_manifest_sha256": "c57842d8fe28ca9c3ad37f90d8988afce7f7e096836c7d2232937bf85058c661"
+}

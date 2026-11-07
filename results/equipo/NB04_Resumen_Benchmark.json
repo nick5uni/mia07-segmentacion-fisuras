@@ -1,0 +1,142 @@
+{
+    "fecha": "2026-11-03T16:54:49.522879",
+    "gpu_benchmark": "Tesla T4",
+    "test_origen": "A) oficial: FisurasDataset(split='test') de lector_pytorch",
+    "imagenes_test": 111,
+    "control_fuga": {
+        "origen_comun_test_train": 0,
+        "origen_comun_test_val": 0,
+        "archivos_identicos_test_vs_train_val": 0
+    },
+    "decisiones_congeladas": {
+        "fecha": "2026-11-03T16:53:21.975967",
+        "umbral_principal": 0.5,
+        "umbral_optimo_val_por_corrida": {
+            "A0_seed20261026": 0.6,
+            "A1_seed20261026": 0.3,
+            "A0_seed20261027": 0.2,
+            "A0_seed20261028": 0.2,
+            "A1_seed20261027": 0.25,
+            "A1_seed20261028": 0.45
+        },
+        "linea_base": {
+            "metodo": "adaptativo",
+            "bloque": 51,
+            "C": 15,
+            "area_min": 100
+        },
+        "corridas": [
+            "A0_seed20261026",
+            "A1_seed20261026",
+            "A0_seed20261027",
+            "A0_seed20261028",
+            "A1_seed20261027",
+            "A1_seed20261028"
+        ],
+        "checkpoint": "BEST por Val Loss (definido en NB02/NB03)"
+    },
+    "tabla_principal": [
+        {
+            "Modelo": "Línea base clásica",
+            "Semillas": 1,
+            "dice": "0.5206",
+            "iou": "0.3519",
+            "precision": "0.5217",
+            "recall": "0.5195",
+            "dice_tol2": "0.6441",
+            "dice_medio_img": "0.5230"
+        },
+        {
+            "Modelo": "A0 Encoder-Decoder (sin skip)",
+            "Semillas": 3,
+            "dice": "0.7036 ± 0.0026",
+            "iou": "0.5428 ± 0.0030",
+            "precision": "0.7200 ± 0.0248",
+            "recall": "0.6892 ± 0.0281",
+            "dice_tol2": "0.8687 ± 0.0028",
+            "dice_medio_img": "0.6892 ± 0.0027"
+        },
+        {
+            "Modelo": "A1 Mini U-Net (con skip)",
+            "Semillas": 3,
+            "dice": "0.7079 ± 0.0046",
+            "iou": "0.5478 ± 0.0056",
+            "precision": "0.7188 ± 0.0135",
+            "recall": "0.6974 ± 0.0100",
+            "dice_tol2": "0.8712 ± 0.0051",
+            "dice_medio_img": "0.6898 ± 0.0031"
+        }
+    ],
+    "estadistica_A1_vs_A0": {
+        "imagenes_test": 111,
+        "delta_dice_global_A1_menos_A0": 0.004145940523908598,
+        "ic95_bootstrap": [
+            -0.0010530978369141602,
+            0.009005584097114269
+        ],
+        "delta_dice_medio_por_imagen": 0.0005240074037271495,
+        "imagenes_donde_A1_gana": 65,
+        "imagenes_donde_A0_gana": 46,
+        "wilcoxon_estadistico": 2679.0,
+        "wilcoxon_p": 0.20686448640671518,
+        "delta_dice_por_semilla": {
+            "20261026": 0.0068,
+            "20261027": 0.0055,
+            "20261028": 0.0003
+        }
+    },
+    "costo_inferencia": {
+        "A0 Encoder-Decoder (sin skip)": {
+            "Parámetros": 106753.0,
+            "GFLOPs (416²)": 8.1295,
+            "ms/img lote 1 (mediana)": 7.568,
+            "ms/img lote 1 (p90)": 7.6959,
+            "ms/img lote 4 (mediana)": 13.6514,
+            "ms/img lote 4 (p90)": 13.8009,
+            "Memoria de activaciones lote 4 (MB)": 1267.5703,
+            "Peso checkpoint (MB)": 1.264
+        },
+        "A1 Mini U-Net (con skip)": {
+            "Parámetros": 118273.0,
+            "GFLOPs (416²)": 9.7244,
+            "ms/img lote 1 (mediana)": 10.5085,
+            "ms/img lote 1 (p90)": 10.7118,
+            "ms/img lote 4 (mediana)": 11.3878,
+            "ms/img lote 4 (p90)": 11.5397,
+            "Memoria de activaciones lote 4 (MB)": 277.2656,
+            "Peso checkpoint (MB)": 1.3982
+        },
+        "A1 / A0": {
+            "Parámetros": 1.1079,
+            "GFLOPs (416²)": 1.1962,
+            "ms/img lote 1 (mediana)": 1.3885,
+            "ms/img lote 1 (p90)": 1.3919,
+            "ms/img lote 4 (mediana)": 0.8342,
+            "ms/img lote 4 (p90)": 0.8362,
+            "Memoria de activaciones lote 4 (MB)": 0.2187,
+            "Peso checkpoint (MB)": 1.1062
+        }
+    },
+    "dice_por_grosor": {
+        "A0": {
+            "Finas (tercio inferior)": 0.647,
+            "Medias": 0.7611,
+            "Anchas (tercio superior)": 0.6596
+        },
+        "A1": {
+            "Finas (tercio inferior)": 0.6467,
+            "Medias": 0.7581,
+            "Anchas (tercio superior)": 0.6645
+        },
+        "Base": {
+            "Finas (tercio inferior)": 0.5091,
+            "Medias": 0.5922,
+            "Anchas (tercio superior)": 0.4678
+        },
+        "A1 - A0": {
+            "Finas (tercio inferior)": -0.0004,
+            "Medias": -0.003,
+            "Anchas (tercio superior)": 0.0049
+        }
+    }
+}

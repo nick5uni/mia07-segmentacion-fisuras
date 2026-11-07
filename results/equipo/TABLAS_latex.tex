@@ -1,0 +1,39 @@
+% Resultados en TEST (umbral 0.5)
+\begin{tabular}{lrllllll}
+\toprule
+Modelo & Semillas & dice & iou & precision & recall & dice\_tol2 & dice\_medio\_img \\
+\midrule
+Línea base clásica & 1 & 0.5206 & 0.3519 & 0.5217 & 0.5195 & 0.6441 & 0.5230 \\
+A0 Encoder-Decoder (sin skip) & 3 & 0.7036 ± 0.0026 & 0.5428 ± 0.0030 & 0.7200 ± 0.0248 & 0.6892 ± 0.0281 & 0.8687 ± 0.0028 & 0.6892 ± 0.0027 \\
+A1 Mini U-Net (con skip) & 3 & 0.7079 ± 0.0046 & 0.5478 ± 0.0056 & 0.7188 ± 0.0135 & 0.6974 ± 0.0100 & 0.8712 ± 0.0051 & 0.6898 ± 0.0031 \\
+\bottomrule
+\end{tabular}
+
+% Costo computacional
+\begin{tabular}{lrrr}
+\toprule
+Modelo & A0 Encoder-Decoder (sin skip) & A1 Mini U-Net (con skip) & A1 / A0 \\
+\midrule
+Parámetros & 106753.000000 & 118273.000000 & 1.108000 \\
+GFLOPs (416²) & 8.129000 & 9.724000 & 1.196000 \\
+ms/img lote 1 (mediana) & 7.568000 & 10.508000 & 1.389000 \\
+ms/img lote 1 (p90) & 7.696000 & 10.712000 & 1.392000 \\
+ms/img lote 4 (mediana) & 13.651000 & 11.388000 & 0.834000 \\
+ms/img lote 4 (p90) & 13.801000 & 11.540000 & 0.836000 \\
+Memoria de activaciones lote 4 (MB) & 1267.570000 & 277.266000 & 0.219000 \\
+Peso checkpoint (MB) & 1.264000 & 1.398000 & 1.106000 \\
+\bottomrule
+\end{tabular}
+
+% Dice por grosor de fisura
+\begin{tabular}{lrrrr}
+\toprule
+modelo & A0 & A1 & Base & A1 - A0 \\
+grupo &  &  &  &  \\
+\midrule
+Finas (tercio inferior) & 0.647000 & 0.646700 & 0.509100 & -0.000400 \\
+Medias & 0.761100 & 0.758100 & 0.592200 & -0.003000 \\
+Anchas (tercio superior) & 0.659600 & 0.664500 & 0.467800 & 0.004900 \\
+\bottomrule
+\end{tabular}
+

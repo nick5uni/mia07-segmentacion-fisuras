@@ -1,0 +1,16 @@
+{
+    "modelo": "A1",
+    "arquitectura": "MiniUNet_con_skip",
+    "seed": 20261028,
+    "parametros": 118273,
+    "gpu": "Tesla T4",
+    "epochs_ejecutadas": 20,
+    "epoch_best": 13,
+    "val_loss_best": 0.33610025722177783,
+    "val_dice_best": 0.7281377033444111,
+    "val_iou_best": 0.5724972784074795,
+    "tiempo_total_min": 54.49680887526663,
+    "tiempo_medio_epoch_seg": 163.4904266257999,
+    "memoria_gpu_pico_mb": 2136.94384765625,
+    "metricas": "VALIDACIÓN (no TEST)"
+}

@@ -1,0 +1,9 @@
+Bloque,Salida,A0 / A1
+Entrada,416² × 3,Igual
+Encoder 1,416² × 16,Igual
+Encoder 2,208² × 32,Igual
+Parte central,104² × 64,Igual
+Decoder 1,208² × 32,Entrada 64 / 96
+Decoder 2,416² × 16,Entrada 32 / 48
+Salida,416² × 1,Igual
+Parámetros,,106753 / 118273

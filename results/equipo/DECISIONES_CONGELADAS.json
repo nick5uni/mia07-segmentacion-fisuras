@@ -1,0 +1,27 @@
+{
+    "fecha": "2026-11-03T16:53:21.975967",
+    "umbral_principal": 0.5,
+    "umbral_optimo_val_por_corrida": {
+        "A0_seed20261026": 0.6,
+        "A1_seed20261026": 0.3,
+        "A0_seed20261027": 0.2,
+        "A0_seed20261028": 0.2,
+        "A1_seed20261027": 0.25,
+        "A1_seed20261028": 0.45
+    },
+    "linea_base": {
+        "metodo": "adaptativo",
+        "bloque": 51,
+        "C": 15,
+        "area_min": 100
+    },
+    "corridas": [
+        "A0_seed20261026",
+        "A1_seed20261026",
+        "A0_seed20261027",
+        "A0_seed20261028",
+        "A1_seed20261027",
+        "A1_seed20261028"
+    ],
+    "checkpoint": "BEST por Val Loss (definido en NB02/NB03)"
+}

@@ -1,0 +1,20 @@
+{
+  "batch_size": 4,
+  "image_size": 416,
+  "learning_rate": 0.001,
+  "max_epochs": 50,
+  "patience": 7,
+  "min_delta": 0.001,
+  "threshold": 0.5,
+  "loss": "BCEWithLogitsLoss + soft Dice, smooth=1",
+  "loader_seed": 42,
+  "seeds": [
+    20261026,
+    20261027,
+    20261028
+  ],
+  "optimizer": "Adam",
+  "augmentation_in_code": false,
+  "model": "A1",
+  "parameters": 118273
+}

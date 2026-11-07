@@ -1,0 +1,3 @@
+image_id,partition,reason,original_image,original_label,original_files_preserved
+3513.rf.782300f38d0a008b3340e54b643e713e,val,fisura_visible_sin_anotacion,datos/extraidos/crack-seg/images/val/3513.rf.782300f38d0a008b3340e54b643e713e.jpg,datos/extraidos/crack-seg/labels/val/3513.rf.782300f38d0a008b3340e54b643e713e.txt,True
+1979.rf.dea5db582b997afc4acb0f68d74c3b84,test,copia_exacta_de_imagen_y_etiqueta_en_prueba,datos/extraidos/crack-seg/images/test/1979.rf.dea5db582b997afc4acb0f68d74c3b84.jpg,datos/extraidos/crack-seg/labels/test/1979.rf.dea5db582b997afc4acb0f68d74c3b84.txt,True

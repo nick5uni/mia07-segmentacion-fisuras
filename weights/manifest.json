@@ -1,0 +1,74 @@
+[
+  {
+    "model": "A0",
+    "seed": 20261026,
+    "file": "weights/NB02_EncoderDecoder/checkpoint_best.pt",
+    "sha256": "a7039a3337fe2186218971af698c06a9c077a30de7e0e8375f0b4c3600a30c6f"
+  },
+  {
+    "model": "A0",
+    "seed": 20261026,
+    "file": "weights/NB02_EncoderDecoder/checkpoint_last.pt",
+    "sha256": "b21bb2996edcb1f7eb0e98d5dde73f0c447b64b8feaeee52aa8e6034c02c078b"
+  },
+  {
+    "model": "A0",
+    "seed": 20261027,
+    "file": "weights/NB04_Semillas/A0_seed20261027/checkpoint_best.pt",
+    "sha256": "e2280e018e5a330c91b0bbcd6ace86196dc4116fb652d12ee6d9f849b9dadf9d"
+  },
+  {
+    "model": "A0",
+    "seed": 20261027,
+    "file": "weights/NB04_Semillas/A0_seed20261027/checkpoint_last.pt",
+    "sha256": "8b172f7cae303b8f5dda4313691bed0a36bebd4576978b498c2b0e54f9e23318"
+  },
+  {
+    "model": "A0",
+    "seed": 20261028,
+    "file": "weights/NB04_Semillas/A0_seed20261028/checkpoint_best.pt",
+    "sha256": "93186b8af8b33c344984d9178deca18abfccbfa1c3ffe2e9b80c76b13941691d"
+  },
+  {
+    "model": "A0",
+    "seed": 20261028,
+    "file": "weights/NB04_Semillas/A0_seed20261028/checkpoint_last.pt",
+    "sha256": "6bd3e82ab0e8dea4310859988259b26f16bcd8d5f43fd799c8b97cccbe6c4f54"
+  },
+  {
+    "model": "A1",
+    "seed": 20261026,
+    "file": "weights/NB03_MiniUNet/checkpoint_best.pt",
+    "sha256": "5effd92369d3055512db84e2619fd89f034519e129736ff68b6bf81efd62c3d0"
+  },
+  {
+    "model": "A1",
+    "seed": 20261026,
+    "file": "weights/NB03_MiniUNet/checkpoint_last.pt",
+    "sha256": "560a22a68fdebf767c996523341d5f4639c3d6ecbf0dc1c4cbed6f234795f6e0"
+  },
+  {
+    "model": "A1",
+    "seed": 20261027,
+    "file": "weights/NB04_Semillas/A1_seed20261027/checkpoint_best.pt",
+    "sha256": "d77514443b47af8f3872a4c0252c8e9c8ee238c7085558d1ac18540f693ffcbd"
+  },
+  {
+    "model": "A1",
+    "seed": 20261027,
+    "file": "weights/NB04_Semillas/A1_seed20261027/checkpoint_last.pt",
+    "sha256": "2c2df40802fd433341014bf315b298aa901e82d00b31c5f754c0c4c3f8f74144"
+  },
+  {
+    "model": "A1",
+    "seed": 20261028,
+    "file": "weights/NB04_Semillas/A1_seed20261028/checkpoint_best.pt",
+    "sha256": "9a3791bfdd38b7024fc114ce18de848341788101d430fc6f01e89a2c24753742"
+  },
+  {
+    "model": "A1",
+    "seed": 20261028,
+    "file": "weights/NB04_Semillas/A1_seed20261028/checkpoint_last.pt",
+    "sha256": "8293d2d879275ef56d8151ea03c8055be386f7dba247e7dd1987cfd5c7fafeb8"
+  }
+]

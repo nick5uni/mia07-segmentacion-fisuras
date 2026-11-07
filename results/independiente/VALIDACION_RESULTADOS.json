@@ -1,0 +1,10 @@
+{
+  "six_checkpoints_loaded_strictly": true,
+  "image_records": 666,
+  "test_images_per_run": 111,
+  "counts_match_pixel_count": true,
+  "metrics_recomputed_from_csv_match": true,
+  "training_performed_here": false,
+  "threshold_changed": false,
+  "note": "No se certifica NB04a ni NB04b no recibidos. Se ejecut\u00f3 evaluaci\u00f3n independiente."
+}

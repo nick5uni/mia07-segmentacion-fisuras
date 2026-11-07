@@ -1,0 +1,113 @@
+{
+  "models": {
+    "A0": {
+      "dice": {
+        "mean": 0.7036287570223617,
+        "sd": 0.002559374978456381
+      },
+      "iou": {
+        "mean": 0.542771954699618,
+        "sd": 0.003045596124728784
+      },
+      "precision": {
+        "mean": 0.7200304058949162,
+        "sd": 0.024767161814041195
+      },
+      "recall": {
+        "mean": 0.6892234623690063,
+        "sd": 0.028060233976674974
+      },
+      "dice_macro": {
+        "mean": 0.6892440174562019,
+        "sd": 0.002728731873571484
+      },
+      "forward_cpu_ms_per_image_median": {
+        "mean": 114.81631250001101,
+        "sd": 32.45853388407923
+      }
+    },
+    "A1": {
+      "dice": {
+        "mean": 0.7078528874053097,
+        "sd": 0.0046286865937232614
+      },
+      "iou": {
+        "mean": 0.5478246351011719,
+        "sd": 0.0055522453869563115
+      },
+      "precision": {
+        "mean": 0.7188359265942218,
+        "sd": 0.013533376887866494
+      },
+      "recall": {
+        "mean": 0.6974188379702024,
+        "sd": 0.00998462774207777
+      },
+      "dice_macro": {
+        "mean": 0.6897680248599292,
+        "sd": 0.003148148930369931
+      },
+      "forward_cpu_ms_per_image_median": {
+        "mean": 122.48844166663275,
+        "sd": 5.554535349831079
+      }
+    }
+  },
+  "paired_seed_delta_dice": [
+    0.0068364234536580915,
+    0.005529314731087309,
+    0.0003066529640987081
+  ],
+  "mean_delta_dice": 0.0042241303829480365,
+  "bootstrap_hierarchical95": [
+    -0.003056807800674502,
+    0.011067146492503618
+  ],
+  "bootstrap_replicates": 3000,
+  "bootstrap_seed": 20261103,
+  "wilcoxon_mean_image_dice_exploratory": 0.20686448640671518,
+  "images_a1_better": 65,
+  "images_a0_better": 46,
+  "notes": "Exploratory paired image test, not independent training replications; bootstrap resamples paired seed indices and paired images; apparent source/scene dependence unmodeled; only 3 seeds.",
+  "coverage_tercile_bounds": [
+    0.012337043333333332,
+    0.022075706666666663
+  ],
+  "error_groups": [
+    {
+      "group": "Menor \u00e1rea anotada",
+      "n": 37,
+      "A0_dice_macro": 0.6470374307274782,
+      "A1_dice_macro": 0.6466684793017778
+    },
+    {
+      "group": "\u00c1rea intermedia",
+      "n": 37,
+      "A0_dice_macro": 0.7610897563695713,
+      "A1_dice_macro": 0.7581038066668113
+    },
+    {
+      "group": "Mayor \u00e1rea anotada",
+      "n": 37,
+      "A0_dice_macro": 0.6596048652715566,
+      "A1_dice_macro": 0.6645317886111985
+    }
+  ],
+  "visual_cases": [
+    {
+      "id": "1839.rf.3495cbba8ee9a583ed0dff8d0e5fc0f7",
+      "A0": 0.0009789525208027412,
+      "A1": 0.0
+    },
+    {
+      "id": "1979.rf.d3ee9d85b659ee844d1c26680f05d419",
+      "A0": 0.713510785921534,
+      "A1": 0.7379624936644703
+    },
+    {
+      "id": "2323.rf.06768caef93b3a44d3c59325a03230eb",
+      "A0": 0.9392820773930753,
+      "A1": 0.9341082822667256
+    }
+  ]
+}

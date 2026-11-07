@@ -1,0 +1,10 @@
+{
+  "bootstrap_replicates": 3000,
+  "seed": 20261103,
+  "resampling_units": [
+    "paired seeds",
+    "paired images"
+  ],
+  "point_estimate": "mean of per-seed global Dice differences",
+  "threshold": 0.5
+}

@@ -1,0 +1,57 @@
+{
+    "fecha_exportacion": "2026-10-29T03:20:21.727324",
+    "notebook": "NB03_MiniUNet",
+    "arquitectura": "MiniUNet_con_skip",
+    "skip_connections": [
+        "encoder1 (16 canales, 416x416) -> concat antes de decoder2",
+        "encoder2 (32 canales, 208x208) -> concat antes de decoder1"
+    ],
+    "parametros_entrenables": 118273,
+    "parametros_A0_referencia": 106753,
+    "diferencia_parametros_vs_A0": 11520,
+    "dataset": "Crack-Seg completo v1",
+    "imagenes_train": 3717,
+    "imagenes_val": 199,
+    "resolucion": [
+        416,
+        416
+    ],
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "loss": "BCE + Dice",
+    "optimizer": "Adam",
+    "seed": 20261026,
+    "max_epochs": 50,
+    "early_stopping_patience": 7,
+    "min_delta": 0.001,
+    "umbral": 0.5,
+    "epochs_ejecutadas": 28,
+    "epoch_checkpoint_best": 21,
+    "checkpoint_best": {
+        "train_loss": 0.3437473466512109,
+        "val_loss": 0.33087715281913027,
+        "val_dice": 0.735081332249051,
+        "val_iou": 0.5811293255368273,
+        "val_precision": 0.7416498993963783,
+        "val_recall": 0.7286280952527378,
+        "val_dice_medio_por_imagen": 0.7207979500743013
+    },
+    "epoch_minima_val_loss_observada": 21,
+    "recursos": {
+        "plataforma": "Google Colab",
+        "gpu": "NVIDIA L4",
+        "pytorch": "2.11.0+cu130",
+        "python": "3.13.16",
+        "tiempo_total_epochs_seg": 1665.3307483780004,
+        "horas_gpu": 0.46259187454944456,
+        "tiempo_medio_epoch_seg": 59.47609815635716,
+        "memoria_gpu_pico_entrenamiento_mb": 661.443359375,
+        "inferencia_ms_por_imagen": 2.5578188894368434,
+        "tamano_checkpoint_best_mb": 1.3982439041137695
+    },
+    "metricas": "Validación; no son resultados de TEST",
+    "checkpoints": [
+        "checkpoint_best.pt",
+        "checkpoint_last.pt"
+    ]
+}

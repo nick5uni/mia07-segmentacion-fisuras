@@ -1,0 +1,16 @@
+{
+    "modelo": "A0",
+    "arquitectura": "EncoderDecoder_sin_skip",
+    "seed": 20261027,
+    "parametros": 106753,
+    "gpu": "Tesla T4",
+    "epochs_ejecutadas": 23,
+    "epoch_best": 16,
+    "val_loss_best": 0.3350848666387587,
+    "val_dice_best": 0.7272843180552622,
+    "val_iou_best": 0.571442882627136,
+    "tiempo_total_min": 61.24942675190002,
+    "tiempo_medio_epoch_seg": 159.78111326582612,
+    "memoria_gpu_pico_mb": 1650.25732421875,
+    "metricas": "VALIDACIÓN (no TEST)"
+}
